@@ -1,0 +1,53 @@
+/* 로그인 메인화면 컨텐츠 설정 */
+.signinMain {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding-top: 70px;
+    min-height: calc(100vh - 70px);
+
+    font-size: 30px;
+    text-align: center;
+
+    border: 1px solid white
+}
+
+/* 로그인 메인화면 로고 이미지 */
+.signinMain img{
+    width: 100px;
+    height: 100px;
+
+    margin: 0 auto;
+}
+
+/* 로그인 화면 버튼 설정 */
+.signinPageButton {
+    width: 120px;
+    height: 40px;
+    margin: 10px;
+
+    font-size: 20px;
+    font-family: 'Do-Hyeon', sans-serif;
+    text-decoration: none;
+    display: inline-flex;         
+    align-items: center;          
+    justify-content: center;      
+
+    background: #1ed561;
+    color:white;
+    cursor: pointer;
+
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+/* 로그인 화면 버튼 호버 효과 */
+.signinPageButton:hover{
+    background-color: #23f770;
+    border-radius: 5px;
+}
