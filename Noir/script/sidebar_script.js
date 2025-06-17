@@ -1,3 +1,4 @@
+// 왼쪽 사이드메뉴 on off 기능
 const sidebar = document.getElementById("sidebar");
 
 let isOpen = false;

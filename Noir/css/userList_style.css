@@ -1,0 +1,96 @@
+/* 재생 목록 페이지 */
+.userListMain {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding-top: 70px;
+    min-height: calc(100vh - 70px);
+
+    font-size: 30px;
+    text-align: center;
+
+    border: 1px solid white;
+}
+
+/* 재생목록 표시 영역 설정 */
+.playListSection {
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+/* 재생목록 타이틀 설정 */
+.userListMain h2{
+    width: 100%;
+    text-align: left;
+    font-weight: normal;
+    margin: 0;
+
+    border-bottom: 1px dotted white;
+}
+
+/* 재생목록 표시 카드 설정 */
+.playListCard {
+    display: flex;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px dotted white;
+}
+
+/* 앨범 이미지 설정*/
+.albumImage img{
+    width: 160px;
+    height: auto;
+    padding-top: 10px;
+}
+
+/* 재생목록 제목 */
+.listTitle {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.listTitle a{
+    text-decoration: none;
+    color: white;
+}
+
+.listTitle:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* 재생목록 갯수 */
+.listCounter {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 24px;
+    color: gray;
+}
+
+/* 재생 순서 편집 버튼 */
+.editButton {
+    width: 50px;
+    height: 50px;
+
+    color: white;
+    font-size: 30px;
+    padding: 0px;
+    margin-left: auto;
+
+    cursor: pointer;
+    background: none;
+    border: none;
+    transition: all 0.3s ease; /* 부드러운 전환 효과 */
+    z-index: 500;
+}
+
+.editButton:hover {
+    background-color: #575757;
+}

@@ -1,4 +1,4 @@
-/* 로그인 메인화면 컨텐츠 설정 */
+/* 개인정보 입력 메인화면 컨텐츠 설정 */
 .privateInfoMain {
     display: flex;
 
@@ -13,4 +13,13 @@
     font-size: 25px;
 
     border: 1px solid white
+}
+
+.signinForm button.basicButton {
+    position: absolute;
+    top: 10;
+    right: -200px;
+
+    height: 40px;
+    padding: 0 20px;
 }

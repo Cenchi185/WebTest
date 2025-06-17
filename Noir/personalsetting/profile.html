@@ -7,25 +7,59 @@
         <!-- 외부 폰트 적용 및 스타일 시트 설정 -->
         <link rel="stylesheet" href="../css/base_style.css">
         <link rel="stylesheet" href="../css/components_style.css">
+        <link rel="stylesheet" href="../css/profile_style.css">
         <meta charset="utf-8">
     </head>
     <body>
         <!-- 로고 및 사이트 제목-->
         <div class="logo">
-            <img src="../img/noir_icon.ico" class="logo_icon">
-            <a href="../Noir.html">&nbsp;Noir&nbsp;</a>
+            <a href="../Noir.html">
+                <img src="../img/noir_icon.ico" class="logo_icon">
+                &nbsp;Noir&nbsp;
+            </a>
         </div>
 
         <!-- 로그인 버튼-->
-        <a href="./signin.html" class="signUp_Header">Sign Up</a>
+        <a href="../login/signin.html" class="signUp_Header">Sign Up</a>
 
         <!-- 상단 헤더 부분 -->
         <div class="header" id="header">
+            <div class="searchBox">
+                <button class="searchButton"><img src="../img/search_icon.png" class="searchIcon"></button>
+                <input type="text" class="searchBox" placeholder="검색하기">
+            </div>
         </div>
         
         <!-- 메인화면 내용 -->
-        <div class="">
+        <div class="profileMain">
+            <table cellspacing="0">
+                <tr>
+                    <td colspan="2" class="profileTitle">프로필 설정</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="profileImage">
+                            <img src="../img/profile_none.png">
+                        </div>
+                    </td>
+                    <td rowspan="2">
+                        <div class="profileSetting">
+                            <label>닉네임</label>
+                            <input type="text" class="inputInfo">
+                        </div>
 
+                        <div class="profileButtons">
+                            <button class="basicButton">Spotify 프리미엄 가입</button>
+                            <button class="basicButton">Spotify 계정 연동</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="basicButton">프로필 사진 설정</button>
+                    </td>
+                </tr>
+            </table>
         </div>
 
         <!-- ☰ 아이콘 -->
@@ -33,10 +67,9 @@
 
         <!-- 사이드바 메뉴 -->
         <div class="sidebar" id="sidebar">
-            <a href="#">좋아요 목록</a>
-            <a href="#">재생 목록</a>
-            <a href="#">프로필 설정</a>
-            <a href="#">계정 탈퇴</a>
+            <a href="../personalsetting/user_list.html">재생 목록</a>
+            <a href="../personalsetting/profile.html" class="active">프로필 설정</a>
+            <a href="../personalsetting/user_fire.html">계정 탈퇴</a>
         </div>
 
         <script src="../script/sidebar_script.js"></script>

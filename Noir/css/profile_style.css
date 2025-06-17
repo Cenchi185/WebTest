@@ -1,0 +1,49 @@
+/* 프로필 페이지 */
+.profileMain {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding-top: 70px;
+    min-height: calc(100vh - 70px);
+
+    font-size: 30px;
+    text-align: center;
+
+    border: 1px solid white;
+}
+
+table {
+    width: 70%;
+    padding: 20px;
+}
+
+table .profileTitle {
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+td {
+    text-align: center;
+}
+
+/* 프로필 사진 */
+.profileImage img{
+    width: 150px;
+    height: 150px;
+}
+
+/* 닉네임 입력 칸 */
+.profileMain .inputInfo {
+    margin-left: 20px;
+    max-width: 300px;
+}
+
+/* 닉네임 아래쪽 버튼 그룹*/
+.profileButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

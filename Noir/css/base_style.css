@@ -63,6 +63,10 @@ body {
     background-color: #575757;
 }
 
+.sidebar a.active{
+    color:#1ed561;
+}
+
 /* 사이드 메뉴 (햄버거 버튼) 스타일 */
 .sideMenu {
     position: fixed;
