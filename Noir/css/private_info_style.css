@@ -1,0 +1,16 @@
+/* 로그인 메인화면 컨텐츠 설정 */
+.privateInfoMain {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding-top: 70px;
+    min-height: calc(100vh - 70px);
+
+    font-size: 25px;
+
+    border: 1px solid white
+}

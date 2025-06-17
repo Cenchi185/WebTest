@@ -1,0 +1,25 @@
+/* 로그인 메인화면 컨텐츠 설정 */
+.signinMain {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding-top: 70px;
+    min-height: calc(100vh - 70px);
+
+    font-size: 30px;
+    text-align: center;
+
+    border: 1px solid white
+}
+
+/* 로그인 메인화면 로고 이미지 */
+.signinMain img{
+    width: 100px;
+    height: 100px;
+
+    margin: 0 auto;
+}

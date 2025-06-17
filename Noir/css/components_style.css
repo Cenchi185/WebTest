@@ -1,0 +1,235 @@
+/* 자주쓰는 내부 구성요소들 */
+
+/* 로고 영역 */
+.logo {
+    position: fixed;
+    top : 15px;
+    left: 70px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* 로고 글씨 */
+.logo a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    
+    color: white;
+    font-size: 30px;
+}
+
+/* 로고 아이콘(그림) */
+.logo_icon {
+    width: 40px;
+    height: 40px;
+    z-index: 1000;
+}
+
+/* 헤더 검색 창 공간 */
+.searchBox {
+    position: relative;
+
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+/* 검색 버튼 설정*/
+.searchButton {
+    width: 40px;
+    height: 40px;
+
+    background: none;
+    cursor: pointer;
+    z-index: 1000;
+
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+/* 헤더 검색창 입력칸 */
+.searchBox input[type="text"]{
+    width: 100%;
+    padding: 10px 0px 10px 40px;
+    font-size: 16px;
+
+    color: white;
+    box-sizing: border-box;
+    background: none;
+}
+
+/* 헤더 검색창 안쪽 검색 버튼 위치 */
+.searchBox .searchButton {
+    position: absolute;
+    float: left;
+}
+
+/* 검색 버튼 호버 효과 */
+.searchButton:hover {
+    background-color: #363636;
+    border-radius: 5px;
+}
+
+/* 검색 아이콘 설정 */
+.searchIcon{
+    width: 30px;
+    height: 30px;
+}
+
+/* 필터 버튼 설정 */
+.filterButton{
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+
+    background: none;
+    color:white;
+    cursor: pointer;
+
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+/* 필터 버튼 호버 효과 */
+.filterButton:hover{
+    background-color: #363636;
+    border-radius: 5px;
+}
+
+/* 필터 아이콘 설정*/
+.filterIcon{
+    width: 30px;
+    height: 30px;
+}
+
+/* 로그인 버튼 */
+.signUp_Header {
+    position: fixed;
+    top: 15px;
+    right: 10px;
+    width: 100px;
+    height: 40px;
+
+    font-size: 20px;
+    font-family: 'Do-Hyeon', sans-serif;
+    text-decoration: none;
+    display: inline-flex;         
+    align-items: center;          
+    justify-content: center;      
+
+    background: #1ed561;
+    color:white;
+    cursor: pointer;
+
+    z-index: 1000;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+/* 로그인 버튼 호버 효과*/
+.signUp_Header:hover {
+    background-color: #23f770;
+    border-radius: 5px;
+}
+
+/* 정보 입력란 설정*/
+.inputInfo {
+    width: 100%;
+    height: 40px;
+    max-width: 500px;
+    
+    font-size: 18px;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 5px;
+    background: none;
+}
+
+/* 화면 안쪽 타이틀 설정*/
+.siteTitle {
+    display: flex;
+    align-items: center;
+}
+
+.siteTitle img {
+    width: 100px;
+    height: 100px;
+}
+
+.siteTitle span {
+    font-size: 60px;
+    color: white;
+
+    margin-left: 10px;
+}
+
+/* 공용 버튼 설정 */
+.basicButton {
+    width: fit-content; 
+    height: 40px;
+    margin: 10px;
+    padding: 0px 20px ;
+
+    font-size: 30px;
+    font-family: 'Do-Hyeon', sans-serif;
+    text-decoration: none;
+    display: inline-flex;         
+    align-items: center;          
+    justify-content: center;      
+
+    background: #1ed561;
+    color:white;
+    cursor: pointer;
+
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+/* 로그인 화면 버튼 호버 효과 */
+.basicButton:hover{
+    background-color: #23f770;
+    border-radius: 5px;
+}
+
+/* 로그인 화면 로그인 폼 설정 */
+.signininForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.signininForm label {
+    width: 200px;
+    text-align: left;
+    margin-right: 10px;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* 회원가입 절차 단계 표시 */
+.signupStep{
+    font-size: 30px;
+}
+
+.signupStep .step {
+    color:gray;
+}
+
+.signupStep .stepActive {
+    color:#1ed561
+}

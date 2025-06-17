@@ -1,0 +1,82 @@
+/* 메인 화면 컨텐츠 구성 설정*/
+.main_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 70px;
+    margin-left: 0px;
+
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    z-index: 900;
+
+    border: 1px solid white;
+}
+
+/* 메인 화면 중앙 구성요소 설정 */
+.mainContent{
+    width: 100%;
+    max-width: fit-content;
+
+    text-align: center;
+    font-size: 30px;
+
+    margin: 0 auto;
+}
+
+/* 메인화면 중앙 로고 이미지 */
+.mainContent img{
+    width: 100px;
+    height: 100px;
+
+    margin: 0 auto;
+}
+
+/* 메인화면 화면 중앙 코멘트 */
+.mainComment .mainComment{
+    margin: 0 auto;
+}
+
+/* 메인화면 검색창 공간 */
+.searchBox_main {
+    position: relative;
+
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid white;
+    border-radius: 5px;
+
+    margin: 0 auto;
+}
+
+/* 검색창 안쪽 입력칸 */
+.searchBox_main input[type="text"]{
+    width: 100%;
+    padding: 10px 40px 10px 40px;
+    font-size: 16px;
+
+    color: white;
+    box-sizing: border-box;
+    background: none;
+}
+
+/* 메인화면 검색창 왼쪽 필터버튼 위치 */
+.searchBox_main .filterButton{
+    position: absolute;
+    float: left;
+}
+
+/* 메인화면 검색창 오른쪽 검색 버튼 위치 */
+.searchBox_main .searchButton{
+    position: absolute;
+    float: right;
+    right: 0px;
+}
+
+/* 추천 버튼 호버 효과 */
+.recommand:hover{
+    background-color: #23f770;
+    border-radius: 5px;
+}
