@@ -1,0 +1,101 @@
+.playerContainer {
+    display: flex;
+
+    width: 100%;
+    padding-top: 70px;
+    min-height: calc(100vh - 70px);
+
+    font-size: 30px;
+    text-align: center;
+
+    border: 1px solid white
+}
+
+.leftPlayer {
+    flex: 1 1 50%;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.albumImage {
+    width: fit-content;
+    height: 300px;
+
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressBar {
+    width: 80%;
+    height: 5px;
+    background: gray;
+}
+
+.controlButtons .basicButton {
+    width: 50px;
+    height: 50px;
+    
+    text-align: center;
+
+    border-radius: 50%;
+}
+
+.rightPlayer {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.toggleBar {
+    border-bottom: white solid 1px;
+}
+
+.toggleBar a{
+    text-decoration: none;
+    color: white;
+}
+
+.toggleBar .active {
+    color:#1ed561;
+}
+
+.playerList{
+    flex:1;
+    overflow-y: auto;
+
+}
+
+.listCard {
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+
+    border-bottom: dotted 1px white;
+}
+
+.songImg{
+    padding: 0 20px 0 20px;
+
+    width: 70px;
+    height: 70px;
+}
+
+.songImg img{
+    width: 100%;
+}
+
+.listControl {
+    display: flex;
+    justify-content: center;
+
+    border-bottom: dotted 1px white;
+}
