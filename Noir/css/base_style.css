@@ -5,6 +5,10 @@
     src: url(../font/DoHyeon-Regular.ttf) format('truetype');
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /* 기본적인 사이트 전체 스타일 */
 body {
     font-family: 'Do-Hyeon', sans-serif;

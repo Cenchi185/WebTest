@@ -1,7 +1,6 @@
-/* 아이디, 비밀번호 찾기 페이지 공통 */
-.findPageMain {
+.songRecommandMain{
     display: flex;
-
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -11,13 +10,7 @@
 
     width: 100%;
     min-height: calc(100vh - 70px);
-
-    font-size: 30px;
-    text-align: center;
+    z-index: 900;
 
     border: 1px solid white;
-}
-
-.findPageMain .comment {
-    margin: 20px auto;
 }

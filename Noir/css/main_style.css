@@ -1,6 +1,7 @@
 /* 메인 화면 컨텐츠 구성 설정*/
 .main_center {
     display: flex;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -49,6 +50,26 @@
     border-radius: 5px;
 
     margin: 0 auto;
+}
+
+.filterPanel {
+    display: none;
+    position: absolute;
+
+    top: 40px;
+    left: 0;
+    
+    background-color: #242424;
+    border: 1px solid white;
+    
+    padding: 10px;
+    z-index: 1000;
+    width: 500px;
+    box-sizing: border-box;
+}
+
+#filterPage:checked + label + input + button + .filterPanel{
+    display: block;
 }
 
 /* 검색창 안쪽 입력칸 */

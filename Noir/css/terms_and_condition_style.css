@@ -7,7 +7,7 @@
     align-items: center;
 
     width: 100%;
-    padding-top: 70px;
+    margin-top: 70px;
     min-height: calc(100vh - 70px);
 
     border: 1px solid white
