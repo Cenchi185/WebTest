@@ -7,7 +7,7 @@
         <!-- 외부 폰트 적용 및 스타일 시트 설정 -->
         <link rel="stylesheet" href="/css/base_style.css">
         <link rel="stylesheet" href="/css/components_style.css">
-        <link rel="stylesheet" href="/css/profile_style.css">
+        <link rel="stylesheet" href="/css/song_result_style.css">  
         <link rel="stylesheet" href="/css/playPage_style.css">
         <meta charset="utf-8">
     </head>
@@ -27,45 +27,83 @@
         <div class="header" id="header">
             <div class="searchBox">
                 <a href="/search_result.html" class="searchButton">
-                    <img src="/img/search_icon.png" class="searchIcon">
+                    <img src="img/search_icon.png" class="searchIcon">
                 </a>
                 <input type="text" class="searchBox" placeholder="검색하기">
             </div>
         </div>
         
         <!-- 메인화면 내용 -->
-        <div class="profileMain">
-            <table cellspacing="0">
-                <tr>
-                    <td colspan="2" class="profileTitle">프로필 설정</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="profileImage">
-                            <img src="/img/profile_none.png">
-                        </div>
-                    </td>
-                    <td rowspan="2">
-                        <div class="profileSetting">
-                            <label>닉네임</label>
-                            <input type="text" class="inputInfo">
-                        </div>
+        <div class="songResultMain" id="main">
+            <div class="mainContent">
+                <a href="/Noir.html">
+                    <img src="img/noir_logo.png">
+                </a>
+                <p class="mainComment">"이런 노래는 어때요?"</p>
 
-                        <div class="profileButtons">
-                            <button class="basicButton">Spotify 프리미엄 가입</button>
-                            <button class="basicButton">Spotify 계정 연동</button>
+                <div class="carouselWrapper">
+                    <div class="cardListHeader">
+                        <div class="cardListTitle">Noir 추천 선곡</div>
+                        <div class="scrollBtnGroup">
+                            <button class="basicButton">&#10094;</button> <!-- < 버튼 -->
+                            <button class="basicButton">&#10095;</button> <!-- > 버튼 -->
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button class="basicButton">프로필 사진 설정</button>
-                    </td>
-                </tr>
-            </table>
+                    </div>
+                    <div class="cardList">
+                        <!-- 반복될 카드 구조 -->
+                        <a href="/playPage.html" class="songCard">
+                            <img src="img/temp_img.png" alt="앨범 이미지" class="albumImg">
+                            <div class="songInfo">
+                                <p class="songTitle">노래 이름</p>
+                                <p class="songArtist">가수 이름</p>
+                            </div>
+                        </a>
+
+                        <a href="/playPage.html" class="songCard">
+                            <img src="img/temp_img.png" alt="앨범 이미지" class="albumImg">
+                            <div class="songInfo">
+                                <p class="songTitle">노래 이름</p>
+                                <p class="songArtist">가수 이름</p>
+                            </div>
+                        </a>
+
+                        <a href="/playPage.html" class="songCard">
+                            <img src="img/temp_img.png" alt="앨범 이미지" class="albumImg">
+                            <div class="songInfo">
+                                <p class="songTitle">노래 이름</p>
+                                <p class="songArtist">가수 이름</p>
+                            </div>
+                        </a>
+
+                        <a href="/playPage.html" class="songCard">
+                            <img src="img/temp_img.png" alt="앨범 이미지" class="albumImg">
+                            <div class="songInfo">
+                                <p class="songTitle">노래 이름</p>
+                                <p class="songArtist">가수 이름</p>
+                            </div>
+                        </a>
+
+                        <a href="/playPage.html" class="songCard">
+                            <img src="img/temp_img.png" alt="앨범 이미지" class="albumImg">
+                            <div class="songInfo">
+                                <p class="songTitle">노래 이름</p>
+                                <p class="songArtist">가수 이름</p>
+                            </div>
+                        </a>
+
+                        <a href="/playPage.html" class="songCard">
+                            <img src="img/temp_img.png" alt="앨범 이미지" class="albumImg">
+                            <div class="songInfo">
+                                <p class="songTitle">노래 이름</p>
+                                <p class="songArtist">가수 이름</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!-- 하단 미니 플레이어 -->
+    <!-- 하단 미니 플레이어 -->
     <div class="miniplayer" id="miniplayer">
         <div class="miniplayerContent">
             <div class="controlButtons">
@@ -218,7 +256,7 @@
         <!-- 사이드바 메뉴 -->
         <div class="sidebar" id="sidebar">
             <a href="/personalsetting/user_list.html">재생 목록</a>
-            <a href="/personalsetting/profile.html" class="active">프로필 설정</a>
+            <a href="/personalsetting/profile.html">프로필 설정</a>
             <a href="/personalsetting/user_fire.html">계정 탈퇴</a>
         </div>
 

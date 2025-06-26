@@ -12,3 +12,18 @@ sideMenu.addEventListener("click", () => {
     isOpen = true;
   }
 });
+
+  const expandBtn = document.getElementById("expandBtn");
+  const maxiplayer = document.getElementById("maxiplayer");
+
+  expandBtn.addEventListener("click", () => {
+    maxiplayer.classList.toggle("active");
+
+    // ▲와 ▼ 모양을 토글 (선택사항)
+    if (maxiplayer.classList.contains("active")) {
+      expandBtn.textContent = "▼";
+    } else {
+      expandBtn.textContent = "▲";
+    }
+  });
+

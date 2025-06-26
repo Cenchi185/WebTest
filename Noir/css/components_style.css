@@ -81,6 +81,8 @@
 .searchIcon{
     width: 30px;
     height: 30px;
+    z-index: auto;
+    overflow: hidden;
 }
 
 /* 필터 버튼 설정 */

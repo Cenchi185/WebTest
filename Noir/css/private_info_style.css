@@ -15,11 +15,18 @@
     border: 1px solid white
 }
 
-.signinForm button.basicButton {
+.signinForm a.basicButton {
     position: absolute;
     top: 10;
     right: -200px;
 
     height: 40px;
     padding: 0 20px;
+}
+
+.singin {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }

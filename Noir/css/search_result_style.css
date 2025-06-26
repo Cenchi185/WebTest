@@ -28,8 +28,6 @@
     text-align: left;
     font-weight: normal;
     margin: 0;
-
-    border-bottom: 1px dotted white;
 }
 
 /* 재생목록 표시 카드 설정 */
@@ -39,7 +37,6 @@
 
     margin: 0;
     padding: 0;
-    border-bottom: 1px dotted white;
 }
 
 .userListMain .albumImage {
@@ -100,25 +97,4 @@
     margin-left: 10px;
     font-size: 24px;
     color: gray;
-}
-
-/* 재생 순서 편집 버튼 */
-.editButton {
-    width: 50px;
-    height: 50px;
-
-    color: white;
-    font-size: 30px;
-    padding: 0px;
-    margin-left: auto;
-
-    cursor: pointer;
-    background: none;
-    border: none;
-    transition: all 0.3s ease; /* 부드러운 전환 효과 */
-    z-index: 500;
-}
-
-.editButton:hover {
-    background-color: #575757;
 }

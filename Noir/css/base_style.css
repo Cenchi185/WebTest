@@ -31,6 +31,8 @@ body {
     align-items: center;
     justify-items: center;
     padding: 0 200px;
+
+    z-index: 950;
     
     border: 1px solid white;
     transition: margin-left 0.3s;
@@ -97,4 +99,79 @@ body {
 .sideMenu:hover {
     background-color: #363636;
     border-radius: 5px;
+}
+
+.miniplayer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+
+  background-color: #242424;
+  display: flex;
+  align-items: center;
+
+  padding: 0 20px;
+  z-index: 1000;
+  border: 1px solid white;
+}
+
+#expandBtn {
+    margin-left: 10px;
+}
+
+.miniListControl {
+    margin-left: 10px;
+}
+
+.miniplayerContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.songWrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  gap: 10px;           /* 썸네일과 제목 사이 간격 */
+}
+
+.miniThumb {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.miniTitle {
+    font-size: 20px;
+}
+
+.maxiplayer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 70px);
+  background-color: #121212;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+  overflow-y: auto;
+  z-index: 900;
+  padding-bottom: 70px;
+}
+
+.toggle_playerContainer {
+    display: flex;
+    width: 100%;
+
+    font-size: 30px;
+    text-align: center;
+}
+
+/* 최대화된 상태 */
+.maxiplayer.active {
+  transform: translateY(0%);
 }

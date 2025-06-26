@@ -7,7 +7,7 @@
         <!-- 외부 폰트 적용 및 스타일 시트 설정 -->
         <link rel="stylesheet" href="/css/base_style.css">
         <link rel="stylesheet" href="/css/components_style.css">
-        <link rel="stylesheet" href="/css/profile_style.css">
+        <link rel="stylesheet" href="/css/search_result_style.css">
         <link rel="stylesheet" href="/css/playPage_style.css">
         <meta charset="utf-8">
     </head>
@@ -34,38 +34,123 @@
         </div>
         
         <!-- 메인화면 내용 -->
-        <div class="profileMain">
-            <table cellspacing="0">
-                <tr>
-                    <td colspan="2" class="profileTitle">프로필 설정</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="profileImage">
-                            <img src="/img/profile_none.png">
+        <div class="userListMain">
+            <div class="playListSection">
+                <h2>상위 검색 결과</h2>
+                <div class="playListCard">
+                    <div class="albumImage">
+                        <img src="/img/temp_img.png">
+                        <a href="/playPage.html">
+                            <div class="albumHover"></div>
+                        </a>
+                    </div>
+                    <div>
+                        <div class="listTitle">
+                            <a href="/playPage.html">가수 - 노래 이름</a>
                         </div>
-                    </td>
-                    <td rowspan="2">
-                        <div class="profileSetting">
-                            <label>닉네임</label>
-                            <input type="text" class="inputInfo">
-                        </div>
+                        <div class="listCounter">재생횟수 ****회</div>
+                    </div>
 
-                        <div class="profileButtons">
-                            <button class="basicButton">Spotify 프리미엄 가입</button>
-                            <button class="basicButton">Spotify 계정 연동</button>
+                </div>
+            </div>
+
+            <div class="playListSection">
+                <h2>이 음악을 찾고 계셨나요?</h2>
+                <div class="playListCard">
+                    <div class="albumImage">
+                        <img src="/img/temp_img.png">
+                        <a href="/playPage.html">
+                            <div class="albumHover"></div>
+                        </a>
+                    </div>
+                    <div>
+                        <div class="listTitle">
+                            <a href="/playPage.html">가수 - 노래 이름</a>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button class="basicButton">프로필 사진 설정</button>
-                    </td>
-                </tr>
-            </table>
+                        <div class="listCounter">재생횟수 ****회</div>
+                    </div>
+                </div>
+
+                <div class="playListCard">
+                    <div class="albumImage">
+                        <img src="/img/temp_img.png">
+                        <a href="/playPage.html">
+                            <div class="albumHover"></div>
+                        </a>
+                    </div>
+                    <div>
+                        <div class="listTitle">
+                            <a href="/playPage.html">가수 - 노래 이름</a>
+                        </div>
+                        <div class="listCounter">재생횟수 ****회</div>
+                    </div>
+                </div>
+
+                <div class="playListCard">
+                    <div class="albumImage">
+                        <img src="/img/temp_img.png">
+                        <a href="/playPage.html">
+                            <div class="albumHover"></div>
+                        </a>
+                    </div>
+                    <div>
+                        <div class="listTitle">
+                            <a href="/playPage.html">가수 - 노래 이름</a>
+                        </div>
+                        <div class="listCounter">재생횟수 ****회</div>
+                    </div>
+                </div>
+
+                <div class="playListCard">
+                    <div class="albumImage">
+                        <img src="/img/temp_img.png">
+                        <a href="/playPage.html">
+                            <div class="albumHover"></div>
+                        </a>
+                    </div>
+                    <div>
+                        <div class="listTitle">
+                            <a href="/playPage.html">가수 - 노래 이름</a>
+                        </div>
+                        <div class="listCounter">재생횟수 ****회</div>
+                    </div>
+                </div>
+
+                <div class="playListCard">
+                    <div class="albumImage">
+                        <img src="/img/temp_img.png">
+                        <a href="/playPage.html">
+                            <div class="albumHover"></div>
+                        </a>
+                    </div>
+                    <div>
+                        <div class="listTitle">
+                            <a href="/playPage.html">가수 - 노래 이름</a>
+                        </div>
+                        <div class="listCounter">재생횟수 ****회</div>
+                    </div>
+                </div>
+
+                <div class="playListCard">
+                    <div class="albumImage">
+                        <img src="/img/temp_img.png">
+                        <a href="/playPage.html">
+                            <div class="albumHover"></div>
+                        </a>
+                    </div>
+                    <div>
+                        <div class="listTitle">
+                            <a href="/playPage.html">가수 - 노래 이름</a>
+                        </div>
+                        <div class="listCounter">재생횟수 ****회</div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
         </div>
 
-        <!-- 하단 미니 플레이어 -->
+    <!-- 하단 미니 플레이어 -->
     <div class="miniplayer" id="miniplayer">
         <div class="miniplayerContent">
             <div class="controlButtons">
@@ -75,7 +160,7 @@
                 <button class="basicButton">🔊</button>
             </div>
             <div class="songWrapper">
-                <img src="/img/temp_img.png" class="miniThumb">
+                <img src="img/temp_img.png" class="miniThumb">
                 <span class="miniTitle">노래 제목 - 가수</span>
             </div>
 
@@ -218,7 +303,7 @@
         <!-- 사이드바 메뉴 -->
         <div class="sidebar" id="sidebar">
             <a href="/personalsetting/user_list.html">재생 목록</a>
-            <a href="/personalsetting/profile.html" class="active">프로필 설정</a>
+            <a href="/personalsetting/profile.html">프로필 설정</a>
             <a href="/personalsetting/user_fire.html">계정 탈퇴</a>
         </div>
 

@@ -14,3 +14,62 @@
 
     border: 1px solid white;
 }
+
+/* 메인 화면 중앙 구성요소 설정 */
+.mainContent{
+    width: 100%;
+    max-width: fit-content;
+
+    text-align: center;
+    font-size: 30px;
+
+    margin: 0 auto;
+}
+
+/* 메인화면 중앙 로고 이미지 */
+.mainContent img{
+    width: 100px;
+    height: 100px;
+
+    margin: 0 auto;
+}
+
+/* 메인화면 화면 중앙 코멘트 */
+.mainComment .mainComment{
+    margin: 0 auto;
+}
+
+.moodContainer {
+    position: relative;
+}
+
+.moodContainer .inputInfo{
+    width: 60%;
+    max-width: 500px;
+}
+
+.moodTag {
+    display: inline-block;
+    background-color: #1ed561;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 10px 5px 10px;
+}
+
+.dropdown {
+    display: none;
+    margin-top: 10px;
+    background-color: #242424;
+    border : 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 체크되었을 때 드롭다운 표시 */
+#toggleMoodList:checked + label + .dropdown {
+  display: block;
+}
